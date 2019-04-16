@@ -54,8 +54,8 @@ class PlayScene extends Phaser.Scene
 	spawn_enemy()
 	{
 		let position = new Object();
-		position.x = Phaser.Math.Between(0, 640);
-		position.y = -32;
+		position.x = 672;
+		position.y = Phaser.Math.Between(0, 480);
 
 		let monster = new Enemy(this, position);
 		this.enemies.push(monster);
